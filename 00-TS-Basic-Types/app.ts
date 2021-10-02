@@ -24,3 +24,22 @@ console.log(person.name);
 for (const hobby of person.hobbies) {
   console.log(hobby.toUpperCase());
 }
+
+enum Role {
+  ADMIN,
+  READ_ONLY,
+  AUTHOR,
+}
+
+const person2 = {
+  name: 'Ted',
+  age: 25,
+  hobbies: ['Cooking', 'Sports'],
+  role: Role.ADMIN,
+};
+
+if (person2.role === Role.ADMIN) {
+    console.log('Is ADMIN');
+}
+
+
