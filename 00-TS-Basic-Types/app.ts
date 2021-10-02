@@ -6,7 +6,10 @@
 const person = {
   name: "Dave",
   age: 35,
-  hobbies: []
+  hobbies: ['Fishing', 'Cooking']
 };
 
-// console.log(person.nickname);
+let favoriteActivities: string [];
+favoriteActivities = ['Sports'];
+
+console.log(person.name);
