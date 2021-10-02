@@ -26,9 +26,9 @@ for (const hobby of person.hobbies) {
 }
 
 enum Role {
-  ADMIN,
-  READ_ONLY,
-  AUTHOR,
+  ADMIN = 'ADMIN',
+  READ_ONLY = 'READ_ONLY',
+  AUTHOR = 10,
 }
 
 const person2 = {
@@ -39,7 +39,5 @@ const person2 = {
 };
 
 if (person2.role === Role.ADMIN) {
-    console.log('Is ADMIN');
+  console.log('Is ADMIN');
 }
-
-
