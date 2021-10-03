@@ -25,6 +25,7 @@ for (const hobby of person.hobbies) {
   console.log(hobby.toUpperCase());
 }
 
+// enums
 enum Role {
   ADMIN = 'ADMIN',
   READ_ONLY = 'READ_ONLY',
@@ -41,3 +42,7 @@ const person2 = {
 if (person2.role === Role.ADMIN) {
   console.log('Is ADMIN');
 }
+
+// any - pretty rare use cases, since usage of 'any' type basically takes away all the advantages TS provides for type checking
+let sports: any [];
+sports = ['footbal', 45, true];
