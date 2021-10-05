@@ -16,4 +16,6 @@ const combinedNames = combine('Pete', 'Pen');
 console.log(`combinedNames`, combinedNames);
 
 // Literal types are the types, which are based on the core types, but you then have a specific version of that type
-function 
+function combine2(input1: number | string, input2: number | string, resultConversion: 'as-number' | 'as-text') {
+    let result;
+}
