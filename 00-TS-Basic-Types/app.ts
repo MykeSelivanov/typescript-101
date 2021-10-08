@@ -16,5 +16,7 @@ function printResult2(num: number): undefined {
 	return;
 }
 
-let combnieValues: any;
+// Function types are the types that describe a function, regarding parameters and the return value
+let combnieValues: (a: number, b: number) => number;
 combnieValues = add;
+console.log(combnieValues(8,8));
