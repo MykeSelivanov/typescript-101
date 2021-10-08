@@ -17,5 +17,4 @@ function printResult2(num: number): undefined {
 }
 
 let combnieValues: any;
-
-
+combnieValues = add;
