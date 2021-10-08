@@ -20,3 +20,8 @@ function printResult2(num: number): undefined {
 let combnieValues: (a: number, b: number) => number;
 combnieValues = add;
 console.log(combnieValues(8,8));
+
+function addAndHandle(n1: number, n2: number, callbackFunc: (num: number) => void) {
+    const result = n1 + n2;
+    callbackFunc(result);
+}
