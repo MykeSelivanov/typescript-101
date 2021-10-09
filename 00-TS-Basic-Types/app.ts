@@ -12,8 +12,10 @@ if (typeof userInput === 'string') {
 	userName = userInput;
 }
 
-// Unknow type
-function generateError(message: string, code: number) {
+// Never type
+// function never returns anything, for ex in cases, when you want to have functions to throw some errors
+// for those cases you can assign never return type
+function generateError(message: string, code: number): never {
 	throw { message: message, errorCode: code };
 }
 
