@@ -11,3 +11,8 @@ userInput = 'Peter';
 if (typeof userInput === 'string') {
 	userName = userInput;
 }
+
+// Unknow type
+function generateError(message: string, code: number) {
+	throw { message: message, errorCode: code };
+}
