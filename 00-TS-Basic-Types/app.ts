@@ -16,3 +16,5 @@ if (typeof userInput === 'string') {
 function generateError(message: string, code: number) {
 	throw { message: message, errorCode: code };
 }
+
+generateError('An Error occurred!', 500);
